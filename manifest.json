@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Binance Market WebSocket Blocker",
+  "version": "1.0.0",
+  "description": "Blocks only Binance's stream.binance.com/stream WebSocket endpoint.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "binance_market_stream_rule",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
